@@ -1,0 +1,9 @@
+<?php
+$id = $_GET['id'];
+mysqli_query($koneksi,"DELETE FROM karyawan WHERE id_karyawan='$id'");
+
+?>
+<script type="text/javascript">
+      alert("Data Berhasil Dihapus")
+      window.location.href="?page=karyawan";
+    </script>
